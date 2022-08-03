@@ -28,11 +28,11 @@ let compra = suma(articuloA,articuloB)
 let compraTarjeta =tarjeta(compra)
     
     if (medioDePago !=" ") {
-      if ( medioDePago == "EFECTIVO") {
-         alert("Precio en efectivo ="+compra)
+      if ( (medioDePago == "EFECTIVO") ||(medioDePago == "efectivo") ) {
+         alert("Precio con descuento en efectivo ="+compra +  "\n Finalizaste tu compra.")
       }
-        else if (medioDePago == "TARJETA"){
-        alert("Precio en tarjeta con IVA = "+compraTarjeta)
+        else if ((medioDePago == "TARJETA")||(medioDePago == "tarjeta") ){
+        alert("Precio en tarjeta con IVA = "+compraTarjeta + "\n Finalizaste tu compra.")
     } else {
         alert("No agregaste nada .Agrega tus articulos")
     }
